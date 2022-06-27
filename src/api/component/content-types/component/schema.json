@@ -28,9 +28,9 @@
       "type": "uid",
       "targetField": "name"
     },
-    "technology": {
+    "technologies": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::technology.technology",
       "inversedBy": "components"
     },

@@ -34,9 +34,9 @@
     },
     "components": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::component.component",
-      "mappedBy": "technology"
+      "inversedBy": "technologies"
     }
   }
 }
