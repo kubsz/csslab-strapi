@@ -45,6 +45,12 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "mappedBy": "components"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "components"
     }
   }
 }

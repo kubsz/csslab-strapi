@@ -12,7 +12,7 @@ module.exports = createCoreController("api::component.component", ({ strapi }) =
   async find(ctx) {
     const query = {
       ...ctx.query,
-      populate: { props: true, tags: true, technologies: { populate: { logo: true } }, users_permissions_user: true },
+      populate: { props: true, tags: true, technologies: { populate: { logo: true } }, category: true },
     };
     return await strapi.entityService.findMany(uid, query);
   },

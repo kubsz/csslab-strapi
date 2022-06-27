@@ -26,7 +26,8 @@
     "components": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::component.component"
+      "target": "api::component.component",
+      "mappedBy": "category"
     }
   }
 }
