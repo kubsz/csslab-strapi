@@ -4,7 +4,8 @@
   "info": {
     "singularName": "technology",
     "pluralName": "technologies",
-    "displayName": "technology"
+    "displayName": "technology",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "string"
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "slug": {
       "type": "uid",
@@ -37,6 +39,9 @@
       "relation": "manyToMany",
       "target": "api::component.component",
       "inversedBy": "technologies"
+    },
+    "rgb": {
+      "type": "string"
     }
   }
 }

@@ -32,7 +32,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::technology.technology",
-      "inversedBy": "components"
+      "mappedBy": "components"
     },
     "users_permissions_user": {
       "type": "relation",
@@ -51,6 +51,11 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "components"
+    },
+    "variables": {
+      "type": "component",
+      "repeatable": true,
+      "component": "props.props"
     }
   }
 }
